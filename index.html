@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h2>Unit Converter</h2>
+      <div class="input">
+        <label for="value">Value:</label>
+        <input
+          class="value-1"
+          type="number"
+          id="value"
+          placeholder="Enter a value"
+        />
+      </div>
+      <div class="input">
+        <label for="from">From:</label>
+        <select class="value" id="from">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="inch">Inch</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="to">To:</label>
+        <select class="value" id="to">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="inch">Inch</option>
+        </select>
+      </div>
+      <button onclick="convert()">Convert</button>
+      <div class="output">
+        <label for="result">Result:</label>
+        <input class="value-1" type="text" id="result" readonly />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
